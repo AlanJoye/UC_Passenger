@@ -23,6 +23,10 @@ class LoginViewController: UIViewController, LoginDisplayLogic
   var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
 
     
+    var isToShowKeypad = false
+    @IBOutlet var btnLogin: UIButton!
+    
+    @IBOutlet var lblLine: UILabel!
     @IBOutlet var lblTitleLogin: UILabel!
     @IBOutlet weak var txtFldMobileNumber: UITextField!
     @IBOutlet weak var labelLogo: UILabel!
@@ -32,10 +36,13 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     @IBOutlet  var consLoginSVheight: NSLayoutConstraint!
     @IBOutlet  var consLoginSVX: NSLayoutConstraint!
     
+    @IBOutlet var consLoginBtnBottom: NSLayoutConstraint!
     @IBOutlet var consBtnBackTopContrast: NSLayoutConstraint!
     @IBOutlet  var consBtnBackTopExtend: NSLayoutConstraint!
      @IBOutlet var consLblTitleTopContrast: NSLayoutConstraint!
     @IBOutlet var consLblTitleTopExtand: NSLayoutConstraint!
+    
+    private var fisky = "fiskalan"
     // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -86,8 +93,19 @@ class LoginViewController: UIViewController, LoginDisplayLogic
    
     
     doSomething()
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
   }
-  
+    //MARK: Actions
+    
+    @IBAction func loginAction(_ sender: UIButton) {
+        
+        GeneralRouterManager.sharedInstance.presentMain()
+    }
+    
+    
   // MARK: Do something
   
   //@IBOutlet weak var nameTextField: UITextField!
@@ -105,12 +123,37 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     
     // Functions
     
+    @objc func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y == 0{
+                let height = keyboardSize.height
+                
+                self.btnLogin.isHidden = false
+                self.consLoginBtnBottom.constant = height + 20
+               // self.view.frame.origin.y += height
+            }
+            
+        }
+        
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+    self.consLoginBtnBottom.constant = 0
+    }
+    
     func expandContract(_ istoContract:Bool)
     {
         
       
+        
+        if (istoContract == false)
+        {
+            
+        }
         lblTitleLogin.alpha = 0
         txtFldMobileNumber.alpha = 0.5
+        //self.labelLogo.alpha = istoContract ? 0.0 : 1.0
         UIView.animate(withDuration: 0.8, animations: {
             self.consLoginSVheight.isActive = istoContract
             self.consLoginSVX.isActive = !istoContract
@@ -139,9 +182,21 @@ class LoginViewController: UIViewController, LoginDisplayLogic
             {
                 
                self.labelLogo.isHidden = !istoContract
+                //self.labelLogo.alpha = istoContract ? 1.0 : 0.0
+                 self.isToShowKeypad = !istoContract
                 if (!istoContract)
                 {
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() , execute: {
+                        
+                      self.txtFldMobileNumber.becomeFirstResponder()
+                        
+                    })
+                   
                    // self.txtFldMobileNumber.becomeFirstResponder()
+                }
+                else{
+                    
                 }
             }
         }
@@ -163,8 +218,12 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     }
     @IBAction func btnBack(_ sender: UIButton) {
         txtFldMobileNumber.resignFirstResponder()
+        self.btnLogin.isHidden = true
         self.expandContract(true)
     }
+    
+    
+    
     
 }
 
@@ -172,14 +231,26 @@ extension LoginViewController : UITextFieldDelegate
 {
     
     
-   
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.labelLogo.isHidden = true
-        self.expandContract(false)
-        textField.resignFirstResponder()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-            textField.becomeFirstResponder()
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+       
+        
+        if (isToShowKeypad == false)
+        {
+            self.labelLogo.isHidden = true
+            self.btnBack.isHidden = false
+            self.expandContract(false)
+            
+            return false
         }
+        
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+       
+        self.labelLogo.isHidden = true
+        self.btnBack.isHidden = false
+        self.expandContract(false)
     }
     
     

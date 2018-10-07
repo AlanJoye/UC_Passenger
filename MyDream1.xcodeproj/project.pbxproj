@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FF4EC279A9B86C3BE8C647A /* Pods_MyDream1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206665E63A6DCDAE1F3856E9 /* Pods_MyDream1.framework */; };
+		9BE39699DDD587C0FDA0B656 /* Pods_MyDream1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6D7DF125A600A38A553DC4 /* Pods_MyDream1Tests.framework */; };
 		C821BD4021322A6B00D77D15 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3A21322A6B00D77D15 /* LoginPresenter.swift */; };
 		C821BD4121322A6B00D77D15 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3B21322A6B00D77D15 /* LoginWorker.swift */; };
 		C821BD4221322A6B00D77D15 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3C21322A6B00D77D15 /* LoginRouter.swift */; };
 		C821BD4321322A6B00D77D15 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3D21322A6B00D77D15 /* LoginModels.swift */; };
 		C821BD4421322A6B00D77D15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3E21322A6B00D77D15 /* LoginViewController.swift */; };
 		C821BD4521322A6B00D77D15 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3F21322A6B00D77D15 /* LoginInteractor.swift */; };
+		C8255F33215C06BD0015B458 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F2D215C06BD0015B458 /* HomePresenter.swift */; };
+		C8255F34215C06BD0015B458 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F2E215C06BD0015B458 /* HomeWorker.swift */; };
+		C8255F35215C06BD0015B458 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F2F215C06BD0015B458 /* HomeRouter.swift */; };
+		C8255F36215C06BD0015B458 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F30215C06BD0015B458 /* HomeModels.swift */; };
+		C8255F37215C06BD0015B458 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F31215C06BD0015B458 /* HomeViewController.swift */; };
+		C8255F38215C06BD0015B458 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F32215C06BD0015B458 /* HomeInteractor.swift */; };
+		C8255F3C215C07240015B458 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F3A215C07240015B458 /* SidebarView.swift */; };
+		C8255F3D215C07240015B458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8255F3B215C07240015B458 /* ViewController.swift */; };
+		C8748BF22166A0DE00ED6ADD /* GeneralRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748BF12166A0DE00ED6ADD /* GeneralRouterManager.swift */; };
+		C8748BF42166A3E100ED6ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8748BF32166A3E100ED6ADD /* Main.storyboard */; };
 		C8F6E1882130A0E200EC5A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6E1872130A0E200EC5A06 /* AppDelegate.swift */; };
-		C8F6E18D2130A0E200EC5A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F6E18B2130A0E200EC5A06 /* Main.storyboard */; };
+		C8F6E18D2130A0E200EC5A06 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F6E18B2130A0E200EC5A06 /* Login.storyboard */; };
 		C8F6E1902130A0E200EC5A06 /* MyDream1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8F6E18E2130A0E200EC5A06 /* MyDream1.xcdatamodeld */; };
 		C8F6E1922130A0E300EC5A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F6E1912130A0E300EC5A06 /* Assets.xcassets */; };
 		C8F6E1952130A0E300EC5A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F6E1932130A0E300EC5A06 /* LaunchScreen.storyboard */; };
 		C8F6E1A02130A0E300EC5A06 /* MyDream1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6E19F2130A0E300EC5A06 /* MyDream1Tests.swift */; };
 		C8F6E1AB2130A0E300EC5A06 /* MyDream1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6E1AA2130A0E300EC5A06 /* MyDream1UITests.swift */; };
+		D0088C86CA0EE39EA645B178 /* Pods_MyDream1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E91B44531BDD935609B425 /* Pods_MyDream1UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +53,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C2BC90612C24848902B0A05 /* Pods-MyDream1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1UITests/Pods-MyDream1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F7A3E6D00455CD7F5517D9A /* Pods-MyDream1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1/Pods-MyDream1.release.xcconfig"; sourceTree = "<group>"; };
+		1B0B33743DCC826A24D77443 /* Pods-MyDream1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1UITests/Pods-MyDream1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		206665E63A6DCDAE1F3856E9 /* Pods_MyDream1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDream1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6D7DF125A600A38A553DC4 /* Pods_MyDream1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDream1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7925BA95C214C0E275945DF5 /* Pods-MyDream1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1/Pods-MyDream1.debug.xcconfig"; sourceTree = "<group>"; };
+		C1EF2C75FC6BFB1918E2911A /* Pods-MyDream1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1Tests/Pods-MyDream1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C821BD3A21322A6B00D77D15 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		C821BD3B21322A6B00D77D15 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		C821BD3C21322A6B00D77D15 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		C821BD3D21322A6B00D77D15 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		C821BD3E21322A6B00D77D15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C821BD3F21322A6B00D77D15 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		C8255F2D215C06BD0015B458 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C8255F2E215C06BD0015B458 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		C8255F2F215C06BD0015B458 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C8255F30215C06BD0015B458 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		C8255F31215C06BD0015B458 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C8255F32215C06BD0015B458 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C8255F3A215C07240015B458 /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		C8255F3B215C07240015B458 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C872E4BC76F91EF31B51B8CA /* Pods-MyDream1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1Tests/Pods-MyDream1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8748BF12166A0DE00ED6ADD /* GeneralRouterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralRouterManager.swift; sourceTree = "<group>"; };
+		C8748BF32166A3E100ED6ADD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C8E195D42154242400C06495 /* MyDream 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyDream 2.xcdatamodel"; sourceTree = "<group>"; };
 		C8F6E1842130A0E200EC5A06 /* MyDream1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDream1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F6E1872130A0E200EC5A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8F6E18C2130A0E200EC5A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8F6E18C2130A0E200EC5A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		C8F6E18F2130A0E200EC5A06 /* MyDream1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDream1.xcdatamodel; sourceTree = "<group>"; };
 		C8F6E1912130A0E300EC5A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F6E1942130A0E300EC5A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +91,7 @@
 		C8F6E1A62130A0E300EC5A06 /* MyDream1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDream1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F6E1AA2130A0E300EC5A06 /* MyDream1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDream1UITests.swift; sourceTree = "<group>"; };
 		C8F6E1AC2130A0E300EC5A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E91B44531BDD935609B425 /* Pods_MyDream1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDream1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF4EC279A9B86C3BE8C647A /* Pods_MyDream1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE39699DDD587C0FDA0B656 /* Pods_MyDream1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,15 +115,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0088C86CA0EE39EA645B178 /* Pods_MyDream1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3238ABB13DE902B03A83F5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7925BA95C214C0E275945DF5 /* Pods-MyDream1.debug.xcconfig */,
+				0F7A3E6D00455CD7F5517D9A /* Pods-MyDream1.release.xcconfig */,
+				C872E4BC76F91EF31B51B8CA /* Pods-MyDream1Tests.debug.xcconfig */,
+				C1EF2C75FC6BFB1918E2911A /* Pods-MyDream1Tests.release.xcconfig */,
+				1B0B33743DCC826A24D77443 /* Pods-MyDream1UITests.debug.xcconfig */,
+				0C2BC90612C24848902B0A05 /* Pods-MyDream1UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB67F2EEB036A2E6FB872E48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				206665E63A6DCDAE1F3856E9 /* Pods_MyDream1.framework */,
+				4A6D7DF125A600A38A553DC4 /* Pods_MyDream1Tests.framework */,
+				F0E91B44531BDD935609B425 /* Pods_MyDream1UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C821BD4621322A7600D77D15 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				C8F6E18B2130A0E200EC5A06 /* Login.storyboard */,
 				C821BD3B21322A6B00D77D15 /* LoginWorker.swift */,
 				C821BD3C21322A6B00D77D15 /* LoginRouter.swift */,
 				C821BD3D21322A6B00D77D15 /* LoginModels.swift */,
@@ -100,6 +160,19 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		C8255F39215C06C30015B458 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C8255F2D215C06BD0015B458 /* HomePresenter.swift */,
+				C8255F2E215C06BD0015B458 /* HomeWorker.swift */,
+				C8255F2F215C06BD0015B458 /* HomeRouter.swift */,
+				C8255F30215C06BD0015B458 /* HomeModels.swift */,
+				C8255F31215C06BD0015B458 /* HomeViewController.swift */,
+				C8255F32215C06BD0015B458 /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C8F6E17B2130A0E200EC5A06 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +180,8 @@
 				C8F6E19E2130A0E300EC5A06 /* MyDream1Tests */,
 				C8F6E1A92130A0E300EC5A06 /* MyDream1UITests */,
 				C8F6E1852130A0E200EC5A06 /* Products */,
+				A3238ABB13DE902B03A83F5A /* Pods */,
+				BB67F2EEB036A2E6FB872E48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,13 +198,17 @@
 		C8F6E1862130A0E200EC5A06 /* MyDream1 */ = {
 			isa = PBXGroup;
 			children = (
+				C8748BF12166A0DE00ED6ADD /* GeneralRouterManager.swift */,
+				C8255F3A215C07240015B458 /* SidebarView.swift */,
+				C8255F3B215C07240015B458 /* ViewController.swift */,
+				C8255F39215C06C30015B458 /* Home */,
 				C821BD4621322A7600D77D15 /* Login */,
 				C8F6E1872130A0E200EC5A06 /* AppDelegate.swift */,
-				C8F6E18B2130A0E200EC5A06 /* Main.storyboard */,
 				C8F6E1912130A0E300EC5A06 /* Assets.xcassets */,
 				C8F6E1932130A0E300EC5A06 /* LaunchScreen.storyboard */,
 				C8F6E1962130A0E300EC5A06 /* Info.plist */,
 				C8F6E18E2130A0E200EC5A06 /* MyDream1.xcdatamodeld */,
+				C8748BF32166A3E100ED6ADD /* Main.storyboard */,
 			);
 			path = MyDream1;
 			sourceTree = "<group>";
@@ -159,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8F6E1AF2130A0E300EC5A06 /* Build configuration list for PBXNativeTarget "MyDream1" */;
 			buildPhases = (
+				460490425FD55C6448E00489 /* [CP] Check Pods Manifest.lock */,
 				C8F6E1802130A0E200EC5A06 /* Sources */,
 				C8F6E1812130A0E200EC5A06 /* Frameworks */,
 				C8F6E1822130A0E200EC5A06 /* Resources */,
@@ -176,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8F6E1B22130A0E300EC5A06 /* Build configuration list for PBXNativeTarget "MyDream1Tests" */;
 			buildPhases = (
+				E23E509CE115DA5B646E37BE /* [CP] Check Pods Manifest.lock */,
 				C8F6E1972130A0E300EC5A06 /* Sources */,
 				C8F6E1982130A0E300EC5A06 /* Frameworks */,
 				C8F6E1992130A0E300EC5A06 /* Resources */,
@@ -194,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8F6E1B52130A0E300EC5A06 /* Build configuration list for PBXNativeTarget "MyDream1UITests" */;
 			buildPhases = (
+				CBB1B62F7385C9B54ACBB931 /* [CP] Check Pods Manifest.lock */,
 				C8F6E1A22130A0E300EC5A06 /* Sources */,
 				C8F6E1A32130A0E300EC5A06 /* Frameworks */,
 				C8F6E1A42130A0E300EC5A06 /* Resources */,
@@ -258,7 +340,8 @@
 			files = (
 				C8F6E1952130A0E300EC5A06 /* LaunchScreen.storyboard in Resources */,
 				C8F6E1922130A0E300EC5A06 /* Assets.xcassets in Resources */,
-				C8F6E18D2130A0E200EC5A06 /* Main.storyboard in Resources */,
+				C8F6E18D2130A0E200EC5A06 /* Login.storyboard in Resources */,
+				C8748BF42166A3E100ED6ADD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +361,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		460490425FD55C6448E00489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDream1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB1B62F7385C9B54ACBB931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDream1UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23E509CE115DA5B646E37BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDream1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8F6E1802130A0E200EC5A06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -285,12 +425,21 @@
 			files = (
 				C821BD4121322A6B00D77D15 /* LoginWorker.swift in Sources */,
 				C821BD4021322A6B00D77D15 /* LoginPresenter.swift in Sources */,
+				C8255F3C215C07240015B458 /* SidebarView.swift in Sources */,
 				C821BD4321322A6B00D77D15 /* LoginModels.swift in Sources */,
 				C821BD4221322A6B00D77D15 /* LoginRouter.swift in Sources */,
+				C8748BF22166A0DE00ED6ADD /* GeneralRouterManager.swift in Sources */,
+				C8255F36215C06BD0015B458 /* HomeModels.swift in Sources */,
 				C821BD4421322A6B00D77D15 /* LoginViewController.swift in Sources */,
 				C8F6E1882130A0E200EC5A06 /* AppDelegate.swift in Sources */,
+				C8255F33215C06BD0015B458 /* HomePresenter.swift in Sources */,
 				C8F6E1902130A0E200EC5A06 /* MyDream1.xcdatamodeld in Sources */,
+				C8255F34215C06BD0015B458 /* HomeWorker.swift in Sources */,
 				C821BD4521322A6B00D77D15 /* LoginInteractor.swift in Sources */,
+				C8255F37215C06BD0015B458 /* HomeViewController.swift in Sources */,
+				C8255F35215C06BD0015B458 /* HomeRouter.swift in Sources */,
+				C8255F3D215C07240015B458 /* ViewController.swift in Sources */,
+				C8255F38215C06BD0015B458 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +475,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C8F6E18B2130A0E200EC5A06 /* Main.storyboard */ = {
+		C8F6E18B2130A0E200EC5A06 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C8F6E18C2130A0E200EC5A06 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		C8F6E1932130A0E300EC5A06 /* LaunchScreen.storyboard */ = {
@@ -461,6 +610,7 @@
 		};
 		C8F6E1B02130A0E300EC5A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7925BA95C214C0E275945DF5 /* Pods-MyDream1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +628,7 @@
 		};
 		C8F6E1B12130A0E300EC5A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7A3E6D00455CD7F5517D9A /* Pods-MyDream1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +646,7 @@
 		};
 		C8F6E1B32130A0E300EC5A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C872E4BC76F91EF31B51B8CA /* Pods-MyDream1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		C8F6E1B42130A0E300EC5A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1EF2C75FC6BFB1918E2911A /* Pods-MyDream1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +688,7 @@
 		};
 		C8F6E1B62130A0E300EC5A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0B33743DCC826A24D77443 /* Pods-MyDream1UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +708,7 @@
 		};
 		C8F6E1B72130A0E300EC5A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2BC90612C24848902B0A05 /* Pods-MyDream1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +771,7 @@
 		C8F6E18E2130A0E200EC5A06 /* MyDream1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C8E195D42154242400C06495 /* MyDream 2.xcdatamodel */,
 				C8F6E18F2130A0E200EC5A06 /* MyDream1.xcdatamodel */,
 			);
 			currentVersion = C8F6E18F2130A0E200EC5A06 /* MyDream1.xcdatamodel */;
