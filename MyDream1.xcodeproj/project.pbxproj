@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8FF4EC279A9B86C3BE8C647A /* Pods_MyDream1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206665E63A6DCDAE1F3856E9 /* Pods_MyDream1.framework */; };
 		9BE39699DDD587C0FDA0B656 /* Pods_MyDream1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6D7DF125A600A38A553DC4 /* Pods_MyDream1Tests.framework */; };
+		C80A69F02173911B0052DAF5 /* AFMapviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A69EF2173911B0052DAF5 /* AFMapviewWrapper.swift */; };
+		C80B4EF8216C4F1900689975 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B4EF7216C4F1900689975 /* Temp.swift */; };
+		C80B4EFA216C4F7400689975 /* Temp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B4EF9216C4F7400689975 /* Temp2.swift */; };
 		C821BD4021322A6B00D77D15 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3A21322A6B00D77D15 /* LoginPresenter.swift */; };
 		C821BD4121322A6B00D77D15 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3B21322A6B00D77D15 /* LoginWorker.swift */; };
 		C821BD4221322A6B00D77D15 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BD3C21322A6B00D77D15 /* LoginRouter.swift */; };
@@ -60,6 +63,9 @@
 		4A6D7DF125A600A38A553DC4 /* Pods_MyDream1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDream1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7925BA95C214C0E275945DF5 /* Pods-MyDream1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1/Pods-MyDream1.debug.xcconfig"; sourceTree = "<group>"; };
 		C1EF2C75FC6BFB1918E2911A /* Pods-MyDream1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDream1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDream1Tests/Pods-MyDream1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C80A69EF2173911B0052DAF5 /* AFMapviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFMapviewWrapper.swift; sourceTree = "<group>"; };
+		C80B4EF7216C4F1900689975 /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		C80B4EF9216C4F7400689975 /* Temp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp2.swift; sourceTree = "<group>"; };
 		C821BD3A21322A6B00D77D15 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		C821BD3B21322A6B00D77D15 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		C821BD3C21322A6B00D77D15 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 		C8F6E1862130A0E200EC5A06 /* MyDream1 */ = {
 			isa = PBXGroup;
 			children = (
+				C80A69EF2173911B0052DAF5 /* AFMapviewWrapper.swift */,
 				C8748BF12166A0DE00ED6ADD /* GeneralRouterManager.swift */,
 				C8255F3A215C07240015B458 /* SidebarView.swift */,
 				C8255F3B215C07240015B458 /* ViewController.swift */,
@@ -209,6 +216,8 @@
 				C8F6E1962130A0E300EC5A06 /* Info.plist */,
 				C8F6E18E2130A0E200EC5A06 /* MyDream1.xcdatamodeld */,
 				C8748BF32166A3E100ED6ADD /* Main.storyboard */,
+				C80B4EF7216C4F1900689975 /* Temp.swift */,
+				C80B4EF9216C4F7400689975 /* Temp2.swift */,
 			);
 			path = MyDream1;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 				C8F6E1802130A0E200EC5A06 /* Sources */,
 				C8F6E1812130A0E200EC5A06 /* Frameworks */,
 				C8F6E1822130A0E200EC5A06 /* Resources */,
+				D95085A6F7EC1802F555972B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +408,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D95085A6F7EC1802F555972B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyDream1/Pods-MyDream1-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDream1/Pods-MyDream1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E23E509CE115DA5B646E37BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80B4EFA216C4F7400689975 /* Temp2.swift in Sources */,
 				C821BD4121322A6B00D77D15 /* LoginWorker.swift in Sources */,
 				C821BD4021322A6B00D77D15 /* LoginPresenter.swift in Sources */,
 				C8255F3C215C07240015B458 /* SidebarView.swift in Sources */,
@@ -434,11 +463,13 @@
 				C8F6E1882130A0E200EC5A06 /* AppDelegate.swift in Sources */,
 				C8255F33215C06BD0015B458 /* HomePresenter.swift in Sources */,
 				C8F6E1902130A0E200EC5A06 /* MyDream1.xcdatamodeld in Sources */,
+				C80B4EF8216C4F1900689975 /* Temp.swift in Sources */,
 				C8255F34215C06BD0015B458 /* HomeWorker.swift in Sources */,
 				C821BD4521322A6B00D77D15 /* LoginInteractor.swift in Sources */,
 				C8255F37215C06BD0015B458 /* HomeViewController.swift in Sources */,
 				C8255F35215C06BD0015B458 /* HomeRouter.swift in Sources */,
 				C8255F3D215C07240015B458 /* ViewController.swift in Sources */,
+				C80A69F02173911B0052DAF5 /* AFMapviewWrapper.swift in Sources */,
 				C8255F38215C06BD0015B458 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

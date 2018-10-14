@@ -2,7 +2,7 @@
 //  GeneralRouterManager.swift
 //  vectone-ios
 //
-//  Created by Fisky Lombardo on 12/01/2017.
+//  Created by Fisky  on 12/01/2018.
 //  Copyright © 2017 Mundio Mobile. All rights reserved.
 //
 

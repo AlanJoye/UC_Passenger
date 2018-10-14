@@ -2,12 +2,16 @@
 //  ViewController.swift
 //  mySidebar2
 //
-//  Created by Muskan on 10/12/17.
-//  Copyright © 2017 akhil. All rights reserved.
+//  Created by Fisky on 10/10/18.
+
 //
 
 import UIKit
 
+
+struct hiall {
+    
+}
 class ViewController: UIViewController {
 
     var sidebarView: SidebarView!

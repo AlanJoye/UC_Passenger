@@ -4,7 +4,7 @@
 target 'MyDream1' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'GoogleMaps'
   # Pods for MyDream1
 
   target 'MyDream1Tests' do
